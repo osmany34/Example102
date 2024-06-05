@@ -8,6 +8,7 @@ public class FileNumbers {
         String fileName = "C:\\javademos\\numbers.txt"; // Dosya adını burada belirtin
         int sum = 0;
 
+        // Dosyadan sayıları okuma işlemi
         try (BufferedReader br = new BufferedReader(new FileReader(fileName))) {
             String line;
             while ((line = br.readLine()) != null) {
@@ -15,9 +16,11 @@ public class FileNumbers {
                 sum += number;
             }
         } catch (IOException e) {
+            // Dosya okuma hatası durumunda hata mesajını yazdır
             System.err.println("Dosya okuma hatası: " + e.getMessage());
         }
 
+        // Toplamı ekrana yazdır
         System.out.println("Toplam: " + sum);
     }
 }
