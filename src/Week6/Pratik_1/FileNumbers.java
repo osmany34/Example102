@@ -1,4 +1,4 @@
-package Week6;
+package Week6.Pratik_1;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
